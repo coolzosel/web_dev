@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>바다사자의 이해</title>
+    <style>
+    div {
+        /*  box-sizing을 border-box로 설정
+            좌우 중앙 정렬
+            */
+
+            box-sizing: border-box;
+            margin: auto;
+    }
+    #bg {
+        /*  가로 640px, 세로 480px
+            배경색 rgba(20, 20, 20, 0.7) 
+            (rgba : https://webdir.tistory.com/406)
+            배경 이미지 : https://images.unsplash.com/photo-1553563777-e7f319af6b47?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80
+            반복 없음
+            배경 이미지 사이즈 : 900px 675px
+            배경 이미지 왼쪽 방향으로 30px 이동
+            상단 패딩 100px
+            */
+            
+            width: 640px; 
+            height: 540px;
+
+
+            background: url(https://cdn.pixabay.com/photo/2018/04/11/03/13/food-3309418_960_720.jpg) left -30px/900px  no-repeat rgba(34, 0, 0, 0.67); 
+
+            padding-top: 100px;
+
+            /*
+            background-image: url(https://cdn.pixabay.com/photo/2018/04/11/03/13/food-3309418_960_720.jpg);
+            background-position: left -30px;
+            background-size: 900px 675px;
+            background-repeat: no-repeat;
+            background-color: rgba(39, 21, 21, 0.5);*/
+
+
+        background-blend-mode: multiply;
+        /* 참고 : https://coderap.tistory.com/137 */
+
+        
+    }
+    #content{
+        /*  가로 : 부모 요소의 50%
+            글자색 흰색, 텍스트 중앙정렬, 글자 크기 11px
+            테두리 흰색 실선 10px, 패딩 16px
+        */
+        width: 50%;
+        color: gold;
+        font-size: 11px;
+        text-align: center;
+        border: gold 10px solid;
+        padding: 16px;
+    }
+
+    h1{
+        
+        font-size: 30px;
+        margin-top: 0.5rem;
+
+    }
+    input[type='submit']{
+        
+        background-color: gold;
+        
+
+    }
+
+    </style>    
+</head>
+<body>
+    <div id="bg">
+        <div id="content">
+            <h1>ABOUT PIZZA</h1>
+            <p>피자(←일본어: ピザ 피자[*], 이탈리아어: pizza 피차[*], <br> 문화어: 삐짜[1])는 밀가루 반죽 위에 토마토 소스, <br>모차렐라 치즈를 얹어서 둥글고 납작한 형태로 구운 <br>빵으로, 문화와 기호에 따라서 고기, 살라미, 해산물, <br>치즈, 채소를 비롯한 다양한 종류의 토핑을 선택하여 얹을 수 있다. </p>
+            <p>여러 나라에서 즐겨먹는 세계적인 음식이 된 피자는<br> 나폴리 지역에서 유래한 이탈리아 요리로, <br>이탈리아에서는 현재 다양한 형태의 피자 도우가 <br>있으며 작은 크기의 피자는 피제타(이탈리아어: pizzetta)라고 부른다. </p>
+            <br>
+        </div>
+        <div style="margin:auto;"><a href=""><img src="more.png" alt="더보기"></a></div> 
+        <div style="position: relative;padding-top: 30px;">
+            <input type="submit" value="더보기" style="position: absolute; left: 50%; transform: translate(-50%);">
+        </div>
+
+        
+    </div>    
+
+</body>
+</html>
