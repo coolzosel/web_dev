@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>바다사자의 이해</title>
+    <title>ABOUT PIZZA(피자에 대하여)</title>
     <style>
     div {
         /*  box-sizing을 border-box로 설정
@@ -29,7 +29,7 @@
             height: 540px;
 
 
-            background: url(https://cdn.pixabay.com/photo/2018/04/11/03/13/food-3309418_960_720.jpg) left -30px/900px  no-repeat rgba(34, 0, 0, 0.67); 
+            background: url(https://cdn.pixabay.com/photo/2018/04/11/03/13/food-3309418_960_720.jpg) -100px -40px/900px  no-repeat rgba(34, 0, 0, 0.67); 
 
             padding-top: 100px;
 
@@ -71,6 +71,10 @@
         
 
     }
+    .more{
+        position: relative;
+        
+    }
 
     </style>    
 </head>
@@ -82,12 +86,14 @@
             <p>여러 나라에서 즐겨먹는 세계적인 음식이 된 피자는<br> 나폴리 지역에서 유래한 이탈리아 요리로, <br>이탈리아에서는 현재 다양한 형태의 피자 도우가 <br>있으며 작은 크기의 피자는 피제타(이탈리아어: pizzetta)라고 부른다. </p>
             <br>
         </div>
-        <div style="margin:auto;"><a href=""><img src="more.png" alt="더보기"></a></div> 
-        <div style="position: relative;padding-top: 30px;">
+        <div class="more"><a href="https://ko.wikipedia.org/wiki/%ED%94%BC%EC%9E%90" target="_blank"><img src="more.png" alt="더보기" width="33px" style="margin-left: 69%; margin-top:10px;"></a></div> 
+        <!-- <div style="position: relative;padding-top: 30px;">
             <input type="submit" value="더보기" style="position: absolute; left: 50%; transform: translate(-50%);">
-        </div>
+        </div> -->
 
-        
+        <!-- 여기서 다이브를 공간으로 만들어줬으니까 그 공간을 부모요소로 삼은
+        서브밋이 다이브의 왼쪽에서 50% 가주는데 이게 딱 중앙이 아니잖아
+        그래서 거기서 위치를 조금 바꿔줘야하니까 중앙 맞추려고-50% -->
     </div>    
 
 </body>
